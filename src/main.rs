@@ -29,7 +29,7 @@ fn main() {
     let start = Instant::now();
     let result = is_zeroed_u128(sliced);
     let duration = start.elapsed();
-    println!("{} as u128 chunks: {}, {:?}", SIZE, result, duration);
+    println!("{} as u128 casted chunks: {}, {:?}", SIZE, result, duration);
 
     let start = Instant::now();
     let result = is_zeroed_chunks(sliced, 1024);
